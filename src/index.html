@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tauri App</title>
+  <script type="module" src="/main.js" defer></script>
+  <style>
+    .logo.vanilla:hover {
+      filter: drop-shadow(0 0 2em #ffe21c);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <form id="form-container">
+      <div id="input-group">
+        <label for="governance">governance</label>
+        <input type="number" min="0" max="100" id="governance" placeholder="0 - 100" />
+        <label for="governance">score:</label>
+        <output name="governance-output" for="governance">0</output>
+      </div>
+      <div id="input-group">
+        <label for="finance">finance</label>
+        <input type="number" min="0" max="100" id="finance" placeholder="0 - 100" />
+        <label for="finance">score:</label>
+        <output name="finance-output" for="finance">0</output>
+      </div>
+      <div id="input-group">
+        <label for="security">security</label>
+        <input type="number" min="0" max="100" id="security" placeholder="0 - 100" />
+      </div>
+      <div id="input-group">
+        <label for="human-resources">human resources</label>
+        <input type="number" min="0" max="100" id="human-resources" placeholder="0 - 100" />
+      </div>
+      <div id="input-group">
+        <label for="research">research</label>
+        <input type="number" min="0" max="100" id="research" placeholder="0 - 100" />
+      </div>
+      <button id="submitbutton" type="submit">submit</button>
+    </form>
+  </div>
+</body>
+
+</html>

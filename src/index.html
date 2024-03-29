@@ -5,44 +5,92 @@
   <meta charset="UTF-8" />
   <link rel="stylesheet" href="styles.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tauri App</title>
+  <title>Project Analyzer</title>
   <script type="module" src="/main.js" defer></script>
-  <style>
-    .logo.vanilla:hover {
-      filter: drop-shadow(0 0 2em #ffe21c);
-    }
-  </style>
 </head>
 
 <body>
   <div class="container">
-
+    <!-- TODO COMPANY NAME, PROJECT NAME, DATE MAYBE LOGO-->
     <form id="form-container">
+
       <div id="input-group">
-        <label for="governance">governance</label>
-        <input type="number" min="0" max="100" id="governance" placeholder="0 - 100" />
-        <label for="governance">score:</label>
-        <output name="governance-output" for="governance">0</output>
+        <label for="Integration">Integration </label>
+        <input type="number" min="0" max="100" id="Integration" placeholder="0 - 100" />
+        <label for="Integration">score:</label>
+        <output name="Integration-output" for="Integration">0</output>
       </div>
+
       <div id="input-group">
-        <label for="finance">finance</label>
-        <input type="number" min="0" max="100" id="finance" placeholder="0 - 100" />
-        <label for="finance">score:</label>
-        <output name="finance-output" for="finance">0</output>
+        <label for="Scope">Scope</label>
+        <input type="number" min="0" max="100" id="Scope" placeholder="0 - 100" />
+        <label for="Scope">score:</label>
+        <output name="Scope-output" for="Scope">0</output>
       </div>
+
       <div id="input-group">
-        <label for="security">security</label>
-        <input type="number" min="0" max="100" id="security" placeholder="0 - 100" />
+        <label for="Schedule">Schedule</label>
+        <input type="number" min="0" max="100" id="Schedule" placeholder="0 - 100" />
+        <label for="Schedule">score:</label>
+        <output name="Schedule-output" for="Schedule">0</output>
       </div>
+
       <div id="input-group">
-        <label for="human-resources">human resources</label>
-        <input type="number" min="0" max="100" id="human-resources" placeholder="0 - 100" />
+        <label for="Cost">Cost</label>
+        <input type="number" min="0" max="100" id="Cost" placeholder="0 - 100" />
+        <label for="Cost">score:</label>
+        <output name="Cost-output" for="Cost">0</output>
       </div>
+
       <div id="input-group">
-        <label for="research">research</label>
-        <input type="number" min="0" max="100" id="research" placeholder="0 - 100" />
+        <label for="Quality">Quality</label>
+        <input type="number" min="0" max="100" id="Quality" placeholder="0 - 100" />
+        <label for="Quality">score:</label>
+        <output name="Quality-output" for="Quality">0</output>
       </div>
+
+      <div id="input-group">
+        <label for="Quality">Resource</label>
+        <input type="number" min="0" max="100" id="Resource" placeholder="0 - 100" />
+        <label for="Resource">score:</label>
+        <output name="Resource-output" for="Resource">0</output>
+      </div>
+
+      <div id="input-group">
+        <label for="Communications">Communications</label>
+        <input type="number" min="0" max="100" id="Communications" placeholder="0 - 100" />
+        <label for="Communications">score:</label>
+        <output name="Communications-output" for="Communications">0</output>
+      </div>
+
+      <div id="input-group">
+        <label for="Risk">Risk</label>
+        <input type="number" min="0" max="100" id="Risk" placeholder="0 - 100" />
+        <label for="Risk">score:</label>
+        <output name="Risk-output" for="Risk">0</output>
+      </div>
+
+      <div id="input-group">
+        <label for="Procurement">Procurement</label>
+        <input type="number" min="0" max="100" id="Procurement" placeholder="0 - 100" />
+        <label for="Procurement">score:</label>
+        <output name="Procurement-output" for="Procurement">0</output>
+      </div>
+
+      <div id="input-group">
+        <label for="Stakeholder">Stakeholder Engagement</label>
+        <input type="number" min="0" max="100" id="Stakeholder" placeholder="0 - 100" />
+        <label for="Stakeholder">score:</label>
+        <output name="Stakeholder-output" for="Stakeholder">0</output>
+      </div>
+
+      <div id="total-score">
+        <p>Total score:</p>
+        <output name="total-output" for="Integration Scope Schedule Cost Quality Resource Communications Procurement Stakeholder">0</output>
+      </div>
+
       <button id="submitbutton" type="submit">submit</button>
+
     </form>
   </div>
 </body>

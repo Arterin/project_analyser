@@ -15,83 +15,86 @@
     <form id="form-container">
 
       <div id="input-group">
-        <label for="Integration">Integration </label>
-        <input type="number" min="0" max="100" id="Integration" placeholder="0 - 100" />
-        <label for="Integration">score:</label>
-        <output name="Integration-output" for="Integration">0</output>
+        <label for="integration">Integration </label>
+        <input type="number" min="0" max="100" id="integration" placeholder="0 - 100" />
+        <label for="integration">score:</label>
+        <output name="integration-output" for="integration">0</output>
       </div>
 
       <div id="input-group">
-        <label for="Scope">Scope</label>
-        <input type="number" min="0" max="100" id="Scope" placeholder="0 - 100" />
-        <label for="Scope">score:</label>
-        <output name="Scope-output" for="Scope">0</output>
+        <label for="scope">Scope</label>
+        <input type="number" min="0" max="100" id="scope" placeholder="0 - 100" />
+        <label for="scope">score:</label>
+        <output name="scope-output" for="scope">0</output>
       </div>
 
       <div id="input-group">
-        <label for="Schedule">Schedule</label>
-        <input type="number" min="0" max="100" id="Schedule" placeholder="0 - 100" />
-        <label for="Schedule">score:</label>
-        <output name="Schedule-output" for="Schedule">0</output>
+        <label for="schedule">Schedule</label>
+        <input type="number" min="0" max="100" id="schedule" placeholder="0 - 100" />
+        <label for="schedule">score:</label>
+        <output name="schedule-output" for="schedule">0</output>
       </div>
 
       <div id="input-group">
-        <label for="Cost">Cost</label>
-        <input type="number" min="0" max="100" id="Cost" placeholder="0 - 100" />
+        <label for="cost">Cost</label>
+        <input type="number" min="0" max="100" id="cost" placeholder="0 - 100" />
         <label for="Cost">score:</label>
-        <output name="Cost-output" for="Cost">0</output>
+        <output name="cost-output" for="cost">0</output>
       </div>
 
       <div id="input-group">
-        <label for="Quality">Quality</label>
-        <input type="number" min="0" max="100" id="Quality" placeholder="0 - 100" />
-        <label for="Quality">score:</label>
-        <output name="Quality-output" for="Quality">0</output>
+        <label for="quality">Quality</label>
+        <input type="number" min="0" max="100" id="quality" placeholder="0 - 100" />
+        <label for="quality">score:</label>
+        <output name="quality-output" for="quality">0</output>
       </div>
 
       <div id="input-group">
-        <label for="Quality">Resource</label>
-        <input type="number" min="0" max="100" id="Resource" placeholder="0 - 100" />
-        <label for="Resource">score:</label>
-        <output name="Resource-output" for="Resource">0</output>
+        <label for="resource">Resource</label>
+        <input type="number" min="0" max="100" id="resource" placeholder="0 - 100" />
+        <label for="resource">score:</label>
+        <output name="resource-output" for="resource">0</output>
       </div>
 
       <div id="input-group">
-        <label for="Communications">Communications</label>
-        <input type="number" min="0" max="100" id="Communications" placeholder="0 - 100" />
-        <label for="Communications">score:</label>
-        <output name="Communications-output" for="Communications">0</output>
+        <label for="communications">Communications</label>
+        <input type="number" min="0" max="100" id="communications" placeholder="0 - 100" />
+        <label for="communications">score:</label>
+        <output name="communications-output" for="communications">0</output>
       </div>
 
       <div id="input-group">
-        <label for="Risk">Risk</label>
-        <input type="number" min="0" max="100" id="Risk" placeholder="0 - 100" />
-        <label for="Risk">score:</label>
-        <output name="Risk-output" for="Risk">0</output>
+        <label for="risk">Risk</label>
+        <input type="number" min="0" max="100" id="risk" placeholder="0 - 100" />
+        <label for="risk">score:</label>
+        <output name="risk-output" for="risk">0</output>
       </div>
 
       <div id="input-group">
-        <label for="Procurement">Procurement</label>
-        <input type="number" min="0" max="100" id="Procurement" placeholder="0 - 100" />
-        <label for="Procurement">score:</label>
-        <output name="Procurement-output" for="Procurement">0</output>
+        <label for="procurement">Procurement</label>
+        <input type="number" min="0" max="100" id="procurement" placeholder="0 - 100" />
+        <label for="procurement">score:</label>
+        <output name="procurement-output" for="procurement">0</output>
       </div>
 
       <div id="input-group">
-        <label for="Stakeholder">Stakeholder Engagement</label>
-        <input type="number" min="0" max="100" id="Stakeholder" placeholder="0 - 100" />
-        <label for="Stakeholder">score:</label>
-        <output name="Stakeholder-output" for="Stakeholder">0</output>
+        <label for="stakeholder">Stakeholder Engagement</label>
+        <input type="number" min="0" max="100" id="stakeholder" placeholder="0 - 100" />
+        <label for="stakeholder">score:</label>
+        <output name="stakeholder-output" for="stakeholder">0</output>
       </div>
 
       <div id="total-score">
         <p>Total score:</p>
-        <output name="total-output" for="Integration Scope Schedule Cost Quality Resource Communications Procurement Stakeholder">0</output>
+        <output name="total-output" for="integration scope schedule cost quality resource communications procurement stakeholder">0</output>
       </div>
 
       <button id="submitbutton" type="submit">submit</button>
 
     </form>
+
+    <p>Problem areas: <span id="yellowspan">yellow</span>, critical problem areas: <span id="redspan">red</span></p>
+
   </div>
 </body>
 

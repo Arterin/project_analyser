@@ -36,6 +36,14 @@ button {
 	color: red;
 }
 
+#bluespan {
+	color: blue;
+}
+
+#greenspan {
+	color: green;
+}
+
 button {
 	cursor: pointer;
 }
@@ -63,15 +71,50 @@ button {
 #input-group {
 	grid-column: 1;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 	align-items: center;
+}
+
+#input-group > * {
+    justify-self: center;
+}
+
+#first-label {
+	justify-self: left;
+}
+
+#total-score > output {
+	justify-self: center;
 }
 
 #total-score {
 	grid-column: 1;
 	display: grid;
-	grid-template-columns: 3fr 1fr;
+	grid-template-columns: 2fr 1fr;
 	align-items: center;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+.header {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+#management {
+	grid-column: 1;
+}
+
+#input-value {
+	grid-column: 2;
+	text-align: center;
+}
+
+#score {
+	grid-column: 3;
+	text-align: center;
 }
 
 #submitbutton {
@@ -80,6 +123,12 @@ button {
 
 #total-score {
 	grid-column: 1;
+}
+
+.container {
+	margin-left: 2em;
+	margin-right: 2em;
+	margin-top: 1em;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -100,4 +149,14 @@ button {
 	button:active {
 		background-color: #0f0f0f69;
 	}
+}
+
+input {
+	width: 5em;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+	margin: 0;
 }

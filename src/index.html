@@ -14,73 +14,69 @@
     <!-- TODO COMPANY NAME, PROJECT NAME, DATE MAYBE LOGO-->
     <form id="form-container">
 
+      <div class="header">
+        <h1 id="management">Management Area</h1>
+        <h1 id="input-value">Input Value</h1>
+        <h1 id="score">Score</h1>
+      </div>
+
       <div id="input-group">
-        <label for="integration">Integration </label>
+        <label id="first-label" for="integration">Integration </label>
         <input type="number" min="0" max="100" id="integration" placeholder="0 - 100" />
-        <label for="integration">score:</label>
         <output name="integration-output" for="integration">0</output>
       </div>
 
       <div id="input-group">
-        <label for="scope">Scope</label>
+        <label id="first-label" for="scope">Scope</label>
         <input type="number" min="0" max="100" id="scope" placeholder="0 - 100" />
-        <label for="scope">score:</label>
         <output name="scope-output" for="scope">0</output>
       </div>
 
       <div id="input-group">
-        <label for="schedule">Schedule</label>
+        <label id="first-label" for="schedule">Schedule</label>
         <input type="number" min="0" max="100" id="schedule" placeholder="0 - 100" />
-        <label for="schedule">score:</label>
         <output name="schedule-output" for="schedule">0</output>
       </div>
 
       <div id="input-group">
-        <label for="cost">Cost</label>
+        <label id="first-label" for="cost">Cost</label>
         <input type="number" min="0" max="100" id="cost" placeholder="0 - 100" />
-        <label for="Cost">score:</label>
         <output name="cost-output" for="cost">0</output>
       </div>
 
       <div id="input-group">
-        <label for="quality">Quality</label>
+        <label id="first-label" for="quality">Quality</label>
         <input type="number" min="0" max="100" id="quality" placeholder="0 - 100" />
-        <label for="quality">score:</label>
         <output name="quality-output" for="quality">0</output>
       </div>
 
       <div id="input-group">
-        <label for="resource">Resource</label>
+        <label id="first-label" for="resource">Resource</label>
         <input type="number" min="0" max="100" id="resource" placeholder="0 - 100" />
-        <label for="resource">score:</label>
         <output name="resource-output" for="resource">0</output>
       </div>
 
       <div id="input-group">
-        <label for="communications">Communications</label>
+        <label id="first-label" for="communications">Communications</label>
         <input type="number" min="0" max="100" id="communications" placeholder="0 - 100" />
-        <label for="communications">score:</label>
         <output name="communications-output" for="communications">0</output>
       </div>
 
       <div id="input-group">
-        <label for="risk">Risk</label>
+        <label id="first-label" for="risk">Risk</label>
         <input type="number" min="0" max="100" id="risk" placeholder="0 - 100" />
-        <label for="risk">score:</label>
         <output name="risk-output" for="risk">0</output>
       </div>
 
       <div id="input-group">
-        <label for="procurement">Procurement</label>
+        <label id="first-label" for="procurement">Procurement</label>
         <input type="number" min="0" max="100" id="procurement" placeholder="0 - 100" />
-        <label for="procurement">score:</label>
         <output name="procurement-output" for="procurement">0</output>
       </div>
 
       <div id="input-group">
-        <label for="stakeholder">Stakeholder Engagement</label>
+        <label id="first-label" for="stakeholder">Stakeholder Engagement</label>
         <input type="number" min="0" max="100" id="stakeholder" placeholder="0 - 100" />
-        <label for="stakeholder">score:</label>
         <output name="stakeholder-output" for="stakeholder">0</output>
       </div>
 
@@ -93,7 +89,7 @@
 
     </form>
 
-    <p>Problem areas: <span id="yellowspan">yellow</span>, critical problem areas: <span id="redspan">red</span></p>
+    <p>Critical Area: <span id="redspan">red</span>, Problem Area: <span id="yellowspan">yellow</span>, Improvement Area: <span id="bluespan">blue</span>, Compliant Area: <span id="greenspan">green</span></p>
 
   </div>
 </body>

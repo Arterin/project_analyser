@@ -153,10 +153,15 @@ h1 {
 
 input {
 	width: 5em;
+	text-align: center;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
 	margin: 0;
+}
+
+input::placeholder {
+    text-align: center;
 }

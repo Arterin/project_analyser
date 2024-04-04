@@ -8,6 +8,8 @@ let greetMsgEl;
 // greetMsgEl.textContent = await invoke("greet", { name: greetInputEl.value });
 // }
 
+// TODO: add green and blue!
+
 async function score() {
 	var form = document.querySelector("#form-container");
 	var inputs = {

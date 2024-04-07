@@ -2,16 +2,29 @@
 	font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
-	font-weight: 400;
-
-	color: #0f0f0f;
-	background-color: #f6f6f6;
+	font-weight: 525;
 
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-text-size-adjust: 100%;
+
+	--lightbg: #282828;
+	--darkbg: #1d2021;
+	--darkred: #cc241d;
+	--lightred: #fb4934;
+	--darkgreen: #98971a;
+	--lightgreen: #b8bb26;
+	--darkyellow: #d79921;
+	--lightyellow: #fabd2f;
+	--darkblue: #458588;
+	--lightblue: #83a598;
+	--gray: #32302f;
+}
+
+button {
+	color: #fe8019 !important;
 }
 
 input,
@@ -22,28 +35,33 @@ button {
 	font-size: 1em;
 	font-weight: 500;
 	font-family: inherit;
-	color: #0f0f0f;
-	background-color: #ffffff;
+	color: #ebdbb2;
+	background-color: var(--gray);
 	transition: border-color 0.25s;
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-/* TODO: gruvbox colors!!!! */
+body {
+	margin: 0;
+	padding-bottom: 2.5em;
+	background-color: #1d2021;
+	color: #ebdbb2;
+}
 
 #yellowspan {
-	color: yellow;
+	color: var(--lightyellow);
 }
 
 #redspan {
-	color: red;
+	color: var(--lightred);
 }
 
 #bluespan {
-	color: blue;
+	color: var(--lightblue);
 }
 
 #greenspan {
-	color: green;
+	color: var(--lightgreen);
 }
 
 button {
@@ -51,10 +69,10 @@ button {
 }
 
 button:hover {
-	border-color: #396cd8;
+	border-color: #d65d0e;
 }
 button:active {
-	border-color: #396cd8;
+	border-color: var(--darkblue);
 	background-color: #e8e8e8;
 }
 
@@ -98,6 +116,7 @@ button {
 
 h1 {
 	font-size: 1.5em;
+	color: #fbf1c7;
 }
 
 .header {
@@ -128,26 +147,26 @@ h1 {
 }
 
 .container {
-	margin-left: 2em;
-	margin-right: 2em;
-	margin-top: 1em;
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-top: 1em;
 }
 
 @media (prefers-color-scheme: dark) {
-	:root {
+	/*:root {
 		color: #f6f6f6;
 		background-color: #2f2f2f;
-	}
+	}*/
 
 	a:hover {
 		color: #24c8db;
 	}
 
-	input,
+	/*input,
 	button {
 		color: #ffffff;
 		background-color: #0f0f0f98;
-	}
+	}*/
 	button:active {
 		background-color: #0f0f0f69;
 	}
@@ -156,6 +175,10 @@ h1 {
 input {
 	width: 5em;
 	text-align: center;
+}
+
+input::placeholder {
+	color: #ebdbb2;
 }
 
 input[type="number"]::-webkit-inner-spin-button,

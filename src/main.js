@@ -36,27 +36,13 @@ async function score() {
 }
 
 function setColor(category, input, score) {
-	// Get the output field
-	const outputField = document.querySelector(`output[name="${category}-output"]`);
-
-	// Set the color based on the input or score
-	if (category === 'total') {
-		if (score < 25) {
-			outputField.style.color = 'red';
-		} else if (score < 50) {
-			outputField.style.color = 'yellow';
-		} else {
-			outputField.style.color = ''; // Default color
-		}
-	} else {
-		if (input < 25) {
-			outputField.style.color = 'red';
-		} else if (input < 50) {
-			outputField.style.color = 'yellow';
-		} else {
-			outputField.style.color = ''; // Default color
-		}
-	}
+    const outputField = document.querySelector(`output[name="${category}-output"]`);
+    const value = category === 'total' ? score : input;
+    outputField.style.color = value < 31 ? '#fb4934'
+		: value < 51 ? '#fabd2f'
+		: value < 81 ? '#83a598'
+		: value < 101 ? '#b8bb26'
+		: '';
 }
 
 

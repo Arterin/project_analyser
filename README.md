@@ -1,7 +1,4 @@
-# Tauri + Vanilla
+# Project Analyser in Tauri
 
-Check release page for releases.
-
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+Check release page for releases. (right hand side of page)
+Click the .msi file to download the installer.
